@@ -44,7 +44,7 @@ export const SignupForm = () => {
         },
         body: JSON.stringify(values, null, 2),
       }).then((res) => {
-        if (res.status == 200) {
+        if (res.status === 200) {
           setRefreshPage(!refreshPage);
         }
       });
@@ -75,7 +75,7 @@ export const SignupForm = () => {
         />
         <p style={{ color: "red" }}> {formik.errors.name}</p>
 
-        <label htmlFor="age">age</label>
+        <label htmlFor="age">Age</label>
         <br />
 
         <input
